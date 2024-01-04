@@ -1,4 +1,4 @@
-import { URLEditor } from './url_editor.js';
+import { URLEditor } from '../URL_Editor/url_editor.js';
 
 // Main block
 let url = 'https://jsonplaceholder.typicode.com/todos/1?a=25&b=10';
