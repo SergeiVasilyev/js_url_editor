@@ -16,12 +16,15 @@ test('Add new params to url', (t) => {
     const url_obj = new URLEditor(url);
     var test_params = {a: '3', b: '10', c: '5', d: '35'}
     assert.deepStrictEqual(test_params, get_obj_from_parameters(url_obj.add_params({ c: '5', d: '35', a: '3' }).searchParams.toString()));
+    assert.notDeepStrictEqual(test_params, get_obj_from_parameters(url_obj.add_params({ c: '5', d: '35', a: '110' }).searchParams.toString()));
 });
 
 test('Edit params in url', (t) => {
     const url_obj = new URLEditor(url);
     var test_params = {a: '25', b: '13'}
     assert.deepStrictEqual(test_params, get_obj_from_parameters(url_obj.edit_params({ b: '13' }).searchParams.toString()));
+    const test_error = () => url_obj.edit_params({ c: '13' }).searchParams.toString();
+    assert.throws(get_obj_from_parameters(test_error, { 'FUE Error': 'Parameter <c> not found' }));
 });
 
 test('Remove params from url', (t) => {
