@@ -15,7 +15,8 @@ The module allows quickly change, add or remove URL parameters
 
 ### Create obj
 
-`const url_obj = new URLEditor(url);`
+`let url = https://example.com?a=25&b=10
+const url_obj = new URLEditor(url);`
 
 ### Methods
 
