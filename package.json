@@ -1,5 +1,12 @@
 {
-    "name": "url-editor",
-    "version": "1.0.0",
-    "type": "commonjs"
+  "name": "js-url-editor",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "url-editor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VSerge",
+  "license": "MIT",
+  "description": ""
 }
