@@ -1,4 +1,7 @@
-import { URLEditor } from '../URL_Editor/url_editor.js';
+// import { URLEditor } from '../URL_Editor/url_editor.js';
+var { URLEditor } = require('../URL_Editor/url_editor.js');
+var test = require('node:test');
+var assert = require('assert');
 
 // Main block
 let url = 'https://jsonplaceholder.typicode.com/todos/1?a=25&b=10';
