@@ -1,6 +1,6 @@
 # JS URL Editor
 
-The module allows quickly change, add or remove URL parameters
+Module for adding, editing and deleting URL parameters
 
 ## Installing
 - Connect to HTML file
